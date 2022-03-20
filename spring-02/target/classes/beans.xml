@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    <bean id="mysqlImpl" class="com.aoeivux.dao.UserDaoMysqlImpl"/>-->
+<!--    <bean id="oracleImpl" class="com.aoeivux.dao.UserDaoOracleImpl"/>-->
+
+<!--    <bean id="userServiceImpl" class="com.aoeivux.service.UserServiceImpl">-->
+<!--    &lt;!&ndash;此处的name是userServiceImpl中的字段属性UserDao ref后接的是引用类型&ndash;&gt;-->
+<!--        <property name="userDao" ref="oracleImpl"/>-->
+<!--    </bean>-->
+
+    <bean id="userT" class="com.aoeivux.pojo.UserT">
+
+    </bean>
+<!--默认使用单例模式-->
+    <bean id="user" class="com.aoeivux.pojo.User" scope="prototype">
+        <constructor-arg index="0" value="zhuyongxing"/>
+    </bean>
+
+</beans>
